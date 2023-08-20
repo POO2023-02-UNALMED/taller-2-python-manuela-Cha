@@ -39,7 +39,7 @@ class Auto():
     marca: str
     motor: Motor
     registro: int
-    cantidadCreados: int
+    cantidadCreados: int=0
 
     def cantidadAsientos(self):
         """Devuelve la cantidad de asientos que son objetos Asiento en la lista del objeto Auto"""
