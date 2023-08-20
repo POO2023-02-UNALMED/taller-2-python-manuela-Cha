@@ -50,7 +50,7 @@ class Auto():
         registros_iguales = True
         registro_motor = self.motor.registro
         for asiento in self.asientos:
-            if asiento.registro != registro_motor:
+            if asiento is not None and asiento.registro != registro_motor:
                 registros_iguales = False
                 break
         return "Auto original" if registros_iguales else "Las piezas no son originales"
